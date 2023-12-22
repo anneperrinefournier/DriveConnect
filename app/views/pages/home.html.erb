@@ -1,0 +1,55 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.postimg.cc/HxFNzMbs/car-driver.jpg) ;">
+  <div class="container home-container">
+
+    <div class="left-logo">
+      <%= image_tag('driveconnect.png', id: "home-logo", alt: "logo driveconnect") %>
+      <h1>Roulez avec confiance, partagez avec passion.</h1>
+      <p>DriveConnect, la communauté de location de voitures qui rapproche les conducteurs.</p>
+      <div class="btn-green">
+        <%= link_to "Louer une voiture", cars_path, class: "links" %>
+      </div>
+  </div>
+
+
+    <div class="right-login">
+      <div class="btns-log">
+        <% if user_signed_in? %>
+          <div class="nav-item dropdown">
+              <%= image_tag "https://i.postimg.cc/HkJ8bCZ4/profil-photo.png", alt: "avatar", class: "avatar-large dropdown-toggle", id: "profileNavbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="profileNavbarDropdown">
+              <%= link_to "Tableau de bord", dashboard_path, class: "dropdown-item" %>
+              <%= link_to "Se déconnecter", destroy_user_session_path, class: "dropdown-item", data: {turbo_method: :delete} %>
+            </div>
+          </div>
+        <% else %>
+          <div class="d-flex gap-3">
+            <div class="btn-suscribe">
+              <%= link_to "Inscription", new_user_registration_path, class: "links" %>
+            </div>
+            <div class="btn-connect">
+              <%= link_to "Connexion", new_user_session_path, class: "links" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container home-container-body justify-content-center">
+  <div class="home-grid">
+    <div class="home-grid-text">
+      <p>Bienvenue sur DriveConnect, votre passerelle vers une aventure automobile unique. Chez DriveConnect, nous croyons en la puissance de la route pour créer des liens et des souvenirs durables.</p>
+      <p>Roulez avec confiance : Explorez notre communauté diversifiée de conducteurs passionnés prêts à partager leurs voitures. Chaque véhicule est approuvé avec soin pour vous offrir une expérience de conduite exceptionnelle.</p>
+      <p>Partagez avec passion : Transformez chaque trajet en une histoire partagée. Rencontrez des passionnés d'automobiles, échangez des conseils sur les itinéraires pittoresques et partagez vos découvertes avec une communauté qui partage votre amour de la route.</p>
+      <p>DriveConnect n'est pas seulement une plateforme de location de voitures entre particuliers, c'est une invitation à explorer, à connecter et à célébrer la joie de conduire. Rejoignez-nous aujourd'hui et découvrez une nouvelle dimension de l'aventure sur route.</p>
+      <div class="btn-green">
+        <%= link_to "Louer une voiture", cars_path, class: "links" %>
+      </div>
+    </div>
+
+    <div class="home-grid-image">
+      <%= image_tag('https://i.postimg.cc/4NDnh4y6/dog-1850465-1280.jpg', alt: "dog in a car", class: "home-img-width") %>
+    </div>
+  </div>
+</div>

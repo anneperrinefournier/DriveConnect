@@ -1,0 +1,49 @@
+<div class="container" data-controller="total-price">
+  <%= link_to cars_path, class: "arrow-index-cars links-cars" do %>
+    <div class="btn-green">
+      <i class="fa-solid fa-arrow-left"></i> Liste des voitures
+    </div>
+  <% end %>
+
+  <div class="d-flex gap-5">
+    <div class="details-car">
+      <div class="d-flex gap-4">
+        <h2><%= @car.brand %> <%= @car.model %></h2>
+        <h2>★ 4.9</i></h2>
+          <img src="https://i.postimg.cc/HkJ8bCZ4/profil-photo.png" class="card-trip-user avatar-bordered" />
+      </div>
+
+      <div class="show-info">
+        <%= @car.year_of_production %> • <%= @car.address %>
+      </div>
+      <div class="show-info d-flex">
+        <div class="price-per-day"><%= @car.price_per_day.to_i %></div> € par jour
+      </div>
+      <div class="show-info">
+        <%= simple_format(@car.description) %>
+      </div>
+    </div>
+    <div class="img-book-car">
+      <% if @car.photo.attached? %>
+        <%= cl_image_tag(@car.photo.key, alt: "photo-car", class: "car-img-show-width") %>
+      <% else %>
+        <%= image_tag('random-car.jpg', alt: "random-photo-car", class: "car-img-show-width") %>
+      <% end %>
+
+      <div class="booking-form-pattern">
+          <div class="d-flex align-items-baseline">
+            <div class="price-per-day"><h2><%= @car.price_per_day.to_i %> €</h2></div><p>  par jour</p>
+          </div>
+
+        <div class="booking-dates">
+          <%= render 'bookings/form', car: @car %>
+        </div>
+
+        <div class="booking-info">
+          <h3>Prix total :</h3>
+          <h4 data-value = "days" data-total-price-target= "total" ></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

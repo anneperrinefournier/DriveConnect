@@ -1,0 +1,111 @@
+
+.btn-green {
+  background-color: $dark-green;
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  padding: 8px 24px;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-orange {
+  background-color: $light-orange;
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  padding: 8px 24px;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;  }
+}
+
+
+.btn-connect {
+  background-color: $dark-green;
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  padding: 8px 24px;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-suscribe {
+  background-color: $light-orange;
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  padding: 8px 24px;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+
+  &:hover {
+    opacity: 0.8;  }
+  }
+
+  .links {
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .a {
+    text-decoration: none;
+    color: $white;
+  }
+
+
+.btn-footer-newsletter-green {
+  background-color: $dark-green;
+  color: $white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  height: 30px;
+  padding: 1px 24px;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.input-footer-newsletter {
+  height: 30px;
+}

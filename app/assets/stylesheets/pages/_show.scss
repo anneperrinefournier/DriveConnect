@@ -1,0 +1,19 @@
+.arrow-index-cars {
+  color: $light-orange;
+  font-size: 40px;
+}
+
+.car-img-show-width {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  width: 650px;
+
+  &:hover {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0.8;
+    border-radius: 20px;
+  }
+}
+
+.show-info {
+  margin-bottom: 30px;
+}

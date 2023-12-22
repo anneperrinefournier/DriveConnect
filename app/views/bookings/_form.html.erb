@@ -1,0 +1,13 @@
+  <div data-controller= "datepicker my-total-price">
+      <%= simple_form_for([@car, Booking.new], local: true) do |f| %>
+        <%= f.input :starts_at, label: "Dates de location", as: :string, input_html: {  data: { datepicker_target: "startDateInput" } } %>
+        <div >
+
+        <%= f.input :ends_at, id: "booking_end_date", label: false, as: :string, input_html:  { class: "d-none", data: { datepicker_target: "endDateInput", total_price_target: "endDateInput"} } %>
+        </div>
+
+        <div class="btn-green">
+          <%= f.button :submit, 'Réserver', id: "submitBtn", class: "links" %>
+        </div>
+      <% end %>
+</div>

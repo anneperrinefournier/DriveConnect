@@ -1,0 +1,30 @@
+<div class="container pt-4 justify-content-center">
+  <div class="row justify-content-center">
+    <h2>Tableau de bord</h2>
+    <p>Vous avez <%= @user_bookings.count %> réservations.</p>
+
+    <div class="cars-list-flex">
+      <% @user_bookings.order(:starts_at).each do |booking| %>
+        <%= link_to car_booking_path(booking.car, booking), class: "links-cars" do %>
+          <div class="card-trip">
+            <% if booking.car.photo.attached? %>
+              <%= cl_image_tag(booking.car.photo.key, alt: "photo-car") %>
+            <% else %>
+            <%= image_tag('random-car.jpg', alt: "random-photo-car") %>
+            <% end %>
+
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= booking.car.brand %> <%= booking.car.model %></h2>
+                <p>Location : J-<%= (booking.starts_at - Date.today).to_i %></p>
+                <p> Début de la location : <%= booking.starts_at.strftime('%d/%m/%Y') %></p>
+                <p>Fin de la location : <%= booking.ends_at.strftime('%d/%m/%Y') %></p>
+                <p>Loueur : <%= booking.user.email %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
