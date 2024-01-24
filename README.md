@@ -8,7 +8,7 @@ DriveConnect, la communauté de location de voitures qui rapproche les conducteu
 DriveConnect propose une plateforme de location de véhicules entre particuliers, similaire à Airbnb, permettant aux utilisateurs de trouver et de louer une variété de véhicules. L'accent est mis sur une expérience utilisateur conviviale et intuitive pour la recherche, la réservation et la gestion des locations de véhicules.
 
 Voir des images du projet [ici](https://troopl.com/anneperrinefournier/driveconnect).<br>
-Figma du projet [ici](https://www.figma.com/file/EeC2oDmvyfbte0Tg2ZEUvE/DriveConnect?type=design&node-id=0%3A1&mode=design&t=8ScNKmPmxSoXzAqn-1).
+Voir les maquettes du projet [ici](https://www.figma.com/file/EeC2oDmvyfbte0Tg2ZEUvE/DriveConnect?type=design&node-id=0%3A1&mode=design&t=8ScNKmPmxSoXzAqn-1).
 
 ## Technologies Utilisées
 
