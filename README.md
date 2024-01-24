@@ -1,8 +1,12 @@
-# Rails Rent Cars
+# Drive Connect
+
+Roulez avec confiance, partagez avec passion.
+DriveConnect, la communauté de location de voitures qui rapproche les conducteurs.
 
 ## Présentation du Projet
 
-"Rails Rent Cars" propose une plateforme de location de véhicules, similaire à Airbnb, permettant aux utilisateurs de trouver et de louer une variété de véhicules. L'accent est mis sur une expérience utilisateur conviviale et intuitive pour la recherche, la réservation et la gestion des locations de véhicules.
+"Rails Rent Cars" propose une plateforme de location de véhicules entre particuliers, similaire à Airbnb, permettant aux utilisateurs de trouver et de louer une variété de véhicules. L'accent est mis sur une expérience utilisateur conviviale et intuitive pour la recherche, la réservation et la gestion des locations de véhicules.
+Images du projet : [Voir ici](https://troopl.com/anneperrinefournier/driveconnect)
 
 ## Technologies Utilisées
 
