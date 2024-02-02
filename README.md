@@ -1,67 +1,41 @@
-# Rails Rent Cars
+# Drive Connect
 
-Dans cet exercice, vous devez implémenter des fonctionnalités dans une application web `rails` à partir du cahier des charges spécifié ci-dessous et correspondant à votre sujet :
+Roulez avec confiance, partagez avec passion.
+DriveConnect, la communauté de location de voitures qui rapproche les conducteurs.
 
-```
-Vous devez créer une plateforme pour louer des voitures entre particuliers
-```
+## Présentation du Projet
 
-## Setup
+DriveConnect propose une plateforme de location de véhicules entre particuliers, similaire à Airbnb, permettant aux utilisateurs de trouver et de louer une variété de véhicules. L'accent est mis sur une expérience utilisateur conviviale et intuitive pour la recherche, la réservation et la gestion des locations de véhicules.
 
-Clonez le dépôt GitHub et exécutez les commandes habituelles vous permettant de lancer l'application sur votre ordinateur.
+Voir des images du projet [ici](https://troopl.com/anneperrinefournier/driveconnect).<br>
+Voir les maquettes du projet [ici](https://www.figma.com/file/EeC2oDmvyfbte0Tg2ZEUvE/DriveConnect?type=design&node-id=0%3A1&mode=design&t=8ScNKmPmxSoXzAqn-1).
 
-Si vous voyez s'afficher le message `rbenv: version 3.1.2 is not installed`, exécutez la commande suivante pour installez la version de `ruby` correspondante :
+## Technologies Utilisées
 
-```bash
-rbenv install 3.1.2 && gem install bundler rubocop pry pry-byebug
-```
+- **Ruby on Rails :** Utilisé pour le backend et la gestion des données.
+- **JavaScript (Stimulus) :** Employé pour les interactions dynamiques et l'amélioration de l'expérience utilisateur.
+- **CSS et HTML :** Responsables du style et de la structure du site web.
+– **API Mapbox :** Intégrée pour la gestion de cartographie, l’emplacement des véhicules disponibles.
+- **API Cloudinary :** Employée pour le stockage et la gestion d'images.
+- **Librairie Flatpicker :** Sélection des dates (range).
 
-Vous pourrez alors réexécuter les commandes habituelles vous permettant de lancer l'application.
+## Fonctionnalités Clés
 
-## Base de données
+- **Annonces de Véhicules :** Les utilisateurs peuvent parcourir des annonces de véhicules disponibles à la location.
+- **Système de Réservation :** Intégration d'un système permettant aux utilisateurs de réserver les véhicules souhaités pour des dates spécifiques.
+- **Gestion des Locations :** Outils pour la gestion des locations, y compris la modification et l'annulation de réservations.
+- **Calcul du prix :** Prix calculé en fonction de la période sélectionnée.
 
-Effectuez les modifications du code nécessaires à l'obtention du schema de données suivant :
+## Comment Exécuter le Projet en Local
 
-<img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/assess/rent_car_db_schema.png" alt="DB schema">
+1. Clonez ce dépôt sur votre machine locale.
+2. Assurez-vous que Ruby on Rails est installé.
+3. Installez les dépendances avec la commande `bundle install`.
+4. Configurez les paramètres nécessaires, y compris les clés d'API, le cas échéant.
+5. Exécutez les migrations de base de données avec `rails db:migrate`.
+6. Lancez l'application avec `rails server`.
+7. Accédez à l'application dans votre navigateur à l'adresse `http://localhost:3000`.
 
-Une voiture n'est pas valide :
+## Contributeurs
 
-- Si elle n'a pas de marque.
-- Si elle n'a pas de modèle.
-- Si elle n'a pas d'adresse.
-- Si son prix journalier est inférieur ou égal à zéro.
-
-Une réservation n'est pas valide :
-
-- Si elle n'a pas de date de début.
-- Si elle n'a pas de date de fin.
-
-La suppression d'un utilisateur doit entraîner la suppression de ses voitures et de ses réservations. La suppression d'une voiture doit entraîner la suppression de ses réservations.
-
-**NB :** La gem `devise` a déjà été ajoutée et la table `users` a déjà été créée.
-
-## Interface utilisateur
-
-Effectuez les modifications du code nécessaires à l'implémentation des parcours utilisateurs suivants :
-
-- En tant qu'utilisateur, je peux accéder à la page d'accueil.
-- En tant qu'utilisateur, je peux voir la liste de toutes les voitures.
-- En tant qu'utilisateur, je peux accéder aux détails d'une voiture.
-- En tant qu'utilisateur, je peux réserver une voiture.
-
-## Spécifications
-
-- Respectez les conventions de `rails`.
-- La page d'accueil doit contenir un lien permettant d'accéder à la liste des voitures.
-- La page listant les voitures doit contenir les liens permettant d'accéder aux détails de chaque voiture.
-- La page affichant les détails d'une voiture doit contenir un lien permettant de retourner sur la page listant toutes les voitures.
-- La page affichant les détails d'une voiture doit contenir le formulaire permettant de faire une réservation.
-- Le formulaire de réservation doit utiliser un sélecteur de date <a href="https://flatpickr.js.org/examples/" target="_blank">Flatpickr</a> pour faciliter la saisie des dates, de type <a href="https://flatpickr.js.org/examples/#range-calendar" target="_blank">range</a>, le plus adapté a la saisie d'une période.
-- Lors de la soumission du formulaire de réservation, l'utilisateur doit être redirigé vers la page de détails de la voiture et une <a href="https://www.rubyguides.com/2019/11/rails-flash-messages/" target="_blank">notification flash</a> doit s'afficher pour confirmer la réservation.
-
-## Ressources
-
-Pour avoir une interface soignée, nous vous conseillons d'utiliser :
-
-- <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">Bootstrap</a> (déjà installé)
-- <a href="https://uikit.lewagon.com/" target="_blank">L'UI Kit du Wagon</a>
+- **Anne-Perrine Fournier**
