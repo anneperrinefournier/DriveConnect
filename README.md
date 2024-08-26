@@ -14,7 +14,7 @@ Voir les maquettes du projet [ici](https://www.figma.com/file/EeC2oDmvyfbte0Tg2Z
 
 - **Ruby on Rails :** Utilisé pour le backend et la gestion des données.
 - **JavaScript (Stimulus) :** Employé pour les interactions dynamiques et l'amélioration de l'expérience utilisateur.
-- **CSS et HTML :** Responsables du style et de la structure du site web.
+- **CSS et HTML :** Responsables du style et de la structure du site web.<br>
 – **API Mapbox :** Intégrée pour la gestion de cartographie, l’emplacement des véhicules disponibles.
 - **API Cloudinary :** Employée pour le stockage et la gestion d'images.
 - **Librairie Flatpicker :** Sélection des dates (range).
